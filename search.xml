@@ -4,18 +4,41 @@
   
     
     <entry>
-      <title><![CDATA[NewPage]]></title>
-      <url>http://yoursite.com/2016/09/14/newPage/</url>
-      <content type="html"></content>
+      <title><![CDATA[在一台陌生的电脑上面更新博客]]></title>
+      <url>http://yoursite.com/2016/09/14/%E5%9C%A8%E4%B8%80%E5%8F%B0%E9%99%8C%E7%94%9F%E7%9A%84%E7%94%B5%E8%84%91%E4%B8%8A%E9%9D%A2%E6%9B%B4%E6%96%B0%E5%8D%9A%E5%AE%A2/</url>
+      <content type="html"><![CDATA[<h1 id="在一台陌生的电脑上面更新已经创建好的博客"><a href="#在一台陌生的电脑上面更新已经创建好的博客" class="headerlink" title="在一台陌生的电脑上面更新已经创建好的博客"></a>在一台陌生的电脑上面更新已经创建好的博客</h1><blockquote>
+<p>使用场景:在公司的电脑上更新博客.</p>
+</blockquote>
+<h2 id="1-搭建平台"><a href="#1-搭建平台" class="headerlink" title="1,搭建平台"></a>1,搭建平台</h2><h3 id="1-安装git"><a href="#1-安装git" class="headerlink" title="1).安装git"></a>1).安装git</h3><h3 id="2-安装node-js"><a href="#2-安装node-js" class="headerlink" title="2).安装node.js"></a>2).安装node.js</h3><p>官网安装</p>
+<h3 id="3-安装hexo"><a href="#3-安装hexo" class="headerlink" title="3).安装hexo"></a>3).安装hexo</h3><blockquote>
+<p>安装好git和node后,执行命令安装hexo</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">&gt; $ sudo npm install -g hexo</div><div class="line">&gt;</div></pre></td></tr></table></figure>
+</blockquote>
+<p>安装好后,难证一下</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo version</div></pre></td></tr></table></figure>
+<blockquote>
+<p>初始化一下hexo</p>
+</blockquote>
+<p>在想保存博客项目的地方创建文件夹,终端cd进入,执行init命令初始化hexo到你指定的目录，</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo init</div></pre></td></tr></table></figure>
+<blockquote>
+<p>验证一下是否初始化好</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo s</div></pre></td></tr></table></figure>
+<p>然后浏览器打开  <a href="http://localhost:4000" target="_blank" rel="external">http://localhost:4000</a> </p>
+<p>将出现Hexo的欢迎界面.终端ctrl+c退出本地模式.</p>
+<h2 id="2-克隆项目"><a href="#2-克隆项目" class="headerlink" title="2.克隆项目"></a><del>2.克隆项目</del></h2><blockquote>
+<p><del>把项目克隆到本地.</del></p>
+</blockquote>
+<p><del>克隆下来的文件里面已经有博客的配置以及主题的设置了!</del></p>
+<p><del>验证一下是否克隆成功,(先cd进那个)</del></p>
+<h2 id="2-配置平台"><a href="#2-配置平台" class="headerlink" title="2.配置平台"></a><del>2.配置平台</del></h2><h2 id="把保存在云端的文件下载来覆盖新建创建的hexo文件…"><a href="#把保存在云端的文件下载来覆盖新建创建的hexo文件…" class="headerlink" title="把保存在云端的文件下载来覆盖新建创建的hexo文件…"></a>把保存在云端的文件下载来覆盖新建创建的hexo文件…</h2><h2 id="参考文件"><a href="#参考文件" class="headerlink" title="参考文件:"></a>参考文件:</h2>]]></content>
     </entry>
     
     <entry>
       <title><![CDATA[Github&Hexo&Next搭建个人博客实践]]></title>
       <url>http://yoursite.com/2016/06/24/Github-Hexo-Next%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E5%AE%9E%E8%B7%B5/</url>
-      <content type="html"><![CDATA[<h1 id="搭建Github-Pages"><a href="#搭建Github-Pages" class="headerlink" title="搭建Github Pages"></a>搭建Github Pages</h1><h2 id="安装git"><a href="#安装git" class="headerlink" title="安装git"></a>安装git</h2><ul>
-<li>mac 自带</li>
-</ul>
-<h2 id="安装node-js"><a href="#安装node-js" class="headerlink" title="安装node.js"></a>安装node.js</h2><ul>
+      <content type="html"><![CDATA[<h1 id="搭建Github-Pages"><a href="#搭建Github-Pages" class="headerlink" title="搭建Github Pages"></a>搭建Github Pages</h1><h2 id="安装git"><a href="#安装git" class="headerlink" title="安装git"></a>安装git</h2><h2 id="安装node-js"><a href="#安装node-js" class="headerlink" title="安装node.js"></a>安装node.js</h2><ul>
 <li>去<a href="https://nodejs.org/en/" target="_blank" rel="external">node官网</a></li>
 </ul>
 <h2 id="安装hexo"><a href="#安装hexo" class="headerlink" title="安装hexo"></a>安装hexo</h2><ul>
@@ -141,6 +164,7 @@
 <li><a href="https://hexo.io/zh-cn/docs/index.html" target="_blank" rel="external">hexo文档</a></li>
 <li><a href="http://baixin.io/2015/08/HEXO搭建个人博客/" target="_blank" rel="external">HEXO搭建个人博客</a></li>
 <li><a href="https://segmentfault.com/a/1190000002632530" target="_blank" rel="external">hexo常用的命令</a> 赞!</li>
+<li><a href="http://ibruce.info/2013/11/22/hexo-your-blog/?utm_source=tuicool" target="_blank" rel="external">hexo你的博客 | 不如</a> 大神!!!</li>
 </ul>
 ]]></content>
     </entry>
