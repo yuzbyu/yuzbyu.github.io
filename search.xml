@@ -4,6 +4,28 @@
   
     
     <entry>
+      <title><![CDATA[Mac端python支持中文]]></title>
+      <url>http://yoursite.com/2016/07/25/Mac%E7%AB%AFpython%E6%94%AF%E6%8C%81%E4%B8%AD%E6%96%87/</url>
+      <content type="html"><![CDATA[<p>>>> WARNING: The version of Tcl/Tk (8.5.9) in use may be unstable. Visit <a href="http://www.python.org/download/mac/tcltk/" target="_blank" rel="external">http://www.python.org/download/mac/tcltk/</a> for current information.</p>
+<p>Mac新安装的 3.5版本  打开IDLE 会出现如上这句.这是在说Tcl/Tk (8.5.9) 没安装好</p>
+<p>解决方法: 打开终端,进入brew</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ brew</div></pre></td></tr></table></figure>
+<p>然后</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ brew install tcl-tk</div></pre></td></tr></table></figure>
+<p>这时终端会建议:To install it, run:<br>  brew install homebrew/dupes/tcl-tk</p>
+<p>听他的</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">brew install homebrew/dupes/tcl-tk</div></pre></td></tr></table></figure>
+<p>等待一会儿,就把tcl-tk-8.6.6 给装好了</p>
+<p><strong><strong><strong><strong><strong><strong><strong><strong><em>**</em></strong></strong></strong></strong></strong></strong></strong></strong>以上是没用的!!<strong><strong><strong><strong><strong><strong><strong><strong><strong><strong>**</strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></p>
+<p><a href="https://www.webucator.com/blog/2015/02/idle-warning-the-version-of-tcltk-8-5-9-in-use-may-be-unstable/" target="_blank" rel="external">https://www.webucator.com/blog/2015/02/idle-warning-the-version-of-tcltk-8-5-9-in-use-may-be-unstable/</a></p>
+<p>正解如下:1,登入到这个网站<a href="http://www.activestate.com/activetcl/downloads" target="_blank" rel="external">http://www.activestate.com/activetcl/downloads</a></p>
+<p>根据需要下载正解的版本(不要下载最新的,比如我的警告是让我去8.5.9 那这里我下载8.5.18.0 这个版本)</p>
+<p><img src="http://ww1.sinaimg.cn/large/72f96cbajw1f85yntpwmuj20mh06yab4.jpg" alt=""></p>
+<p>下载完成了安装后重启IDLE即可!</p>
+]]></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[在云端更新博客]]></title>
       <url>http://yoursite.com/2016/07/15/%E5%9C%A8%E4%B8%80%E5%8F%B0%E9%99%8C%E7%94%9F%E7%9A%84%E7%94%B5%E8%84%91%E4%B8%8A%E9%9D%A2%E6%9B%B4%E6%96%B0%E5%8D%9A%E5%AE%A2/</url>
       <content type="html"><![CDATA[<h1 id="在一台陌生的电脑上面更新已经创建好的博客"><a href="#在一台陌生的电脑上面更新已经创建好的博客" class="headerlink" title="在一台陌生的电脑上面更新已经创建好的博客"></a>在一台陌生的电脑上面更新已经创建好的博客</h1><blockquote>
