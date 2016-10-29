@@ -94,7 +94,7 @@
 <meta property="og:image" content="https://d17h27t6h515a5.cloudfront.net/topher/2016/September/57e4355d_tip-percent-2/tip-percent-2.png">
 <meta property="og:image" content="https://d17h27t6h515a5.cloudfront.net/topher/2016/September/57e440a6_double-example/double-example.png">
 <meta property="og:image" content="https://d17h27t6h515a5.cloudfront.net/topher/2016/September/57e44477_inout/inout.png">
-<meta property="og:updated_time" content="2016-10-24T17:36:17.000Z">
+<meta property="og:updated_time" content="2016-10-29T05:07:11.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="swift start">
 <meta name="twitter:description" content="Swift1234567891011class Game &amp;#123;    var bugs: Int    var hasMusic: Bool    var levels: Int        init(bugs: Int, hasMusic: Bool, levels: Int) &amp;#123;        self.bugs = bugs        self.hasMusic =">
@@ -372,6 +372,22 @@
 </blockquote>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div></pre></td><td class="code"><pre><div class="line">enum Season &#123;</div><div class="line">    case Fall</div><div class="line">    case Winter</div><div class="line">    case Spring</div><div class="line">    case Summer</div><div class="line"> &#125;</div><div class="line"></div><div class="line">let myFavoriteSeason = Season.Fall</div><div class="line">var favoriteActivity = &quot;&quot;</div><div class="line"></div><div class="line">switch (myFavoriteSeason) &#123;</div><div class="line">    case .Fall:</div><div class="line">        favoriteActivity = &quot;seeing the leaves change color.&quot;</div><div class="line">    case .Winter:</div><div class="line">       favoriteActivity = &quot;skiing.&quot;</div><div class="line">    case .Spring:</div><div class="line">        favoriteActivity = &quot;seeing the wildflowers bloom&quot;</div><div class="line">    case .Summer:</div><div class="line">        favoriteActivity = &quot;swimming in the river&quot;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <h1 id="字符串"><a href="#字符串" class="headerlink" title="字符串"></a>字符串</h1><p>请记住，属性和方法与特定类型有关联：属性好比值，而方法好比函数（它们本质相同，只是属性和方法是设计层面的术语，而值和函数是程序层面的术语。）。</p>
+<blockquote>
+<p>==<strong>reverse() 翻转</strong>==</p>
+</blockquote>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// Reverse the characters in a string 翻转：比如，把zby 翻转为ybz</span></div><div class="line"><span class="keyword">var</span> forwardString = <span class="string">"spoons"</span></div><div class="line"><span class="keyword">var</span> charactersReversed = forwardString.characters.reversed()  <span class="comment">//reversed()方法返回所有字符的集合而不是一个字符串</span></div><div class="line"><span class="keyword">var</span> backwardsString = <span class="type">String</span>(charactersReversed)  <span class="comment">//使用 String 初始化方法来它转化为字符串类型。</span></div></pre></td></tr></table></figure>
+<blockquote>
+<p>字符串组</p>
+</blockquote>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// Concatenation</span></div><div class="line"><span class="keyword">let</span> theTruth = <span class="string">"Money can't buy me love"</span></div><div class="line"><span class="keyword">let</span> alsoTrue = <span class="string">"but it can buy me a boat."</span></div><div class="line"><span class="keyword">let</span> combinedTruths = theTruth + <span class="string">", "</span> + alsoTrue</div><div class="line"></div><div class="line"><span class="comment">// Finding a substring within a string</span></div><div class="line"><span class="keyword">var</span> word = <span class="string">"fortunate"</span></div><div class="line">word.<span class="built_in">contains</span>(<span class="string">"tuna"</span>)</div><div class="line"></div><div class="line"><span class="comment">// Replacing a substring </span></div><div class="line"><span class="keyword">var</span> password = <span class="string">"Mary had a little loris"</span></div><div class="line"><span class="keyword">var</span> newPassword = password.replacingOccurrences(of: <span class="string">"a"</span>, with: <span class="string">"A"</span>)</div></pre></td></tr></table></figure>
+<h1 id="零值"><a href="#零值" class="headerlink" title="零值"></a>零值</h1><h1 id="可选值"><a href="#可选值" class="headerlink" title="可选值"></a>可选值</h1><p>option</p>
+<p>可选值类型可作为参数传递给函数</p>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">func</span> <span class="title">pickUpGroceries</span><span class="params">(car:Car?)</span></span> &#123;</div><div class="line">    <span class="keyword">if</span> <span class="keyword">let</span> car = car &#123;</div><div class="line">        <span class="built_in">print</span>(<span class="string">"We'll pick up the groceries in the (car.model)"</span>)</div><div class="line">    &#125; <span class="keyword">else</span> &#123;</div><div class="line">        <span class="built_in">print</span>(<span class="string">"Let's walk to the store"</span>)</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>此函数容纳可选值类型 Car? 的参数。如果变量 car 有值，则开车到杂货店。如果 car 为零值，则步行到商店。以下是这两种情况可能显示的内容：</p>
+<p>var someCar = Car(make: “Toyota”, model: “Corolla”)<br>pickUpGroceries(someCar)<br>然后输出可能为: We’ll pick up the groceries in the Corolla</p>
+<p>在为零值的情况下:</p>
+<p>pickUpGroceries(nil)<br>输出为: Let’s walk to the store</p>
+<h1 id="数组"><a href="#数组" class="headerlink" title="数组"></a>数组</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">// The verbose way</div><div class="line">var numbers = Array&lt;Double&gt;()</div><div class="line"></div><div class="line">// More often you will see ...</div><div class="line">var moreNumbers = [Double]()</div><div class="line"></div><div class="line">// Array literal syntax</div><div class="line">let differentNumbers = [97.5, 98.5, 99.0]</div></pre></td></tr></table></figure>
 
       
     </div>
@@ -410,6 +426,10 @@
           </div>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2016/09/20/markdown学习笔记的副本/" rel="prev" title="markdown学习笔记">
+                markdown学习笔记 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -503,7 +523,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">8</span>
+              <span class="site-state-item-count">9</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -513,7 +533,7 @@
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">5</span>
+                <span class="site-state-item-count">6</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
@@ -562,7 +582,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Swift"><span class="nav-number">1.</span> <span class="nav-text">Swift</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#func"><span class="nav-number">2.</span> <span class="nav-text">func</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#一开始设置了默认的值：0-15"><span class="nav-number">2.0.0.1.</span> <span class="nav-text">一开始设置了默认的值：0.15</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-func进阶"><span class="nav-number">2.0.1.</span> <span class="nav-text">2.func进阶:</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#字符串"><span class="nav-number">3.</span> <span class="nav-text">字符串</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Swift"><span class="nav-number">1.</span> <span class="nav-text">Swift</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#func"><span class="nav-number">2.</span> <span class="nav-text">func</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#一开始设置了默认的值：0-15"><span class="nav-number">2.0.0.1.</span> <span class="nav-text">一开始设置了默认的值：0.15</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-func进阶"><span class="nav-number">2.0.1.</span> <span class="nav-text">2.func进阶:</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#字符串"><span class="nav-number">3.</span> <span class="nav-text">字符串</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#零值"><span class="nav-number">4.</span> <span class="nav-text">零值</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#可选值"><span class="nav-number">5.</span> <span class="nav-text">可选值</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#数组"><span class="nav-number">6.</span> <span class="nav-text">数组</span></a></li></ol></div>
             
           </div>
         </section>
