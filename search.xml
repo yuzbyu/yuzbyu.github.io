@@ -4,6 +4,41 @@
   
     
     <entry>
+      <title><![CDATA[10000个小时成功的谬论]]></title>
+      <url>http://yoursite.com/2016/11/14/10000%E4%B8%AA%E5%B0%8F%E6%97%B6%E7%9A%84%E8%B0%AC%E8%AE%BA/</url>
+      <content type="html"><![CDATA[<h1 id="10000个小时成功的谬论"><a href="#10000个小时成功的谬论" class="headerlink" title="10000个小时成功的谬论"></a>10000个小时成功的谬论</h1><p>​    关于10000个小时成功的各种新闻,各种鸡汤,各种App层出不穷,世面上也有非常多的成功类书籍,职业指导类书籍也在用这个想法,这个理论.之前我也觉得这个想法不错啊,居然可以这样成功哦,是不是我也有可能这样迎娶白富美,从此走上人生巅峰,然后我在手机里也下了一个App,用来统计我想要在人生技能树上所点的点数.</p>
+<p>​    但是我发现,这个转换关系,这里的逻辑非常的混乱.</p>
+<p>​    我想到:成功是可以通过技能树上面的点点点来达到某个值就行了的吗(比如说10000).那么,首先就要确定说10000个小时成功这个理论要成立.</p>
+<p>​    很不幸的是,到目前为止,10000个小时还没有人实际的去验证过,没有这样的实际数据,案例.<a href="https://thesandtrap.com/b/thrash_talk/post_mortem_on_the_dan_plan" target="_blank" rel="external">有一个美国人Dan尝试这个理论,结果没到10000个小时就放弃了</a>.<a href="https://en.wikipedia.org/wiki/Dan_McLaughlin_(golfer" target="_blank" rel="external">挑战者的维基百科</a>)</p>
+<p>下面这位记者的看法我非常的认同啊.一个人练练练,只是浪费各种时间,没有系统的路线,没有人指导,没有一个反馈环怎么行,需要微调的.很不幸的是,挑战者 a “meta” experience 这个愿望都没有实现.只给世人留下了一张没有完成的藏宝图.最后:Dan has quit the plan and now sells soda.</p>
+<blockquote>
+<p>He started bouncing around instructors and posting swings that looked like he was not progressing as I would have hoped. Then as I looked deeper I could not find any information on what he was doing for deliberate practice. Some gym work, hitting balls, but nothing specific about what his practice routine was. I began to become disenfranchised.</p>
+<p>As an engineer I felt his process for improving was a mess. I began to worry that at the conclusion of the Dan Plan were not going to be able to determine anything about the ten-thousand-hour theory. No conclusion, nothing. The investment of my time to follow him was going to be wasted.</p>
+</blockquote>
+<p>​    </p>
+<p>更不幸的是往上看10000个小时,这个10000这个数字提出来是什么鬼,他怎么不是10000,然后我发现</p>
+<ol>
+<li><p>1985年，芝加哥大学的 Benjamin Bloom 教授发现，所有被调查的精英人物，无一不是投入大量时间，刻苦练习。成就越大的人，似乎越勤奋，钻研业务的时间也越长。</p>
+<p>他最后的观点就是：天才不是天生的，而是后天训练出来的。</p>
+</li>
+<li><p>1993年，迈阿密大学的 Anders Ericsson 教授到柏林音乐学院,将那里的学生分成三组：普通的学生、优秀的学生、卓越的学生,一番数学统计,发现:普通的学生，练习弹琴的时间，总计在4000小时左右；优秀的学生，大约在8000小时左右；卓越的学生，没有一个人低于10000小时。然后发表一篇论文.《有目的的训练在专业人才培养中的作用》（The Role of Deliberate Practice in the Acquisition of Expert Performance）</p>
+<p>​</p>
+</li>
+<li><p>2008年，畅销书作家 Malcolm Gladwell 将这篇论文写进了他的新书《异类：成功人士的故事》（Outliers: The Story of Success）。他概念化了原始论文的结论，宣称存在一个“10000小时规则”（10000 hour rule），即成功至少需要10000个小时的投入。</p>
+<p>​</p>
+</li>
+<li><p>2009年，一位名叫 Dan McLaughlin 的人，读到了这本书。</p>
+<p>他是一位商业摄影师，但是对自己的工作，越来越没有兴趣。他想要改变人生。这本书启发了他。</p>
+<p>接下来的故事…</p>
+<p>​</p>
+</li>
+</ol>
+<p>这个10000个小时,就是这样来的,人们是这样玩的,你们玩吧,我就不陪你们玩了.</p>
+<p>参考:<a href="https://ruanyf.github.io/survivor/plan-b/dan-plan.html" target="_blank" rel="external">重新定义人生的10000个小时</a></p>
+]]></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[markdown学习笔记]]></title>
       <url>http://yoursite.com/2016/09/20/markdown%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E7%9A%84%E5%89%AF%E6%9C%AC/</url>
       <content type="html"><![CDATA[<p>想要设置 —&gt;YAML Front Matters<br>三个减号 然后enter</p>
