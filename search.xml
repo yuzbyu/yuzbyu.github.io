@@ -39,8 +39,36 @@
     </entry>
     
     <entry>
+      <title><![CDATA[五笔拼音+Emoji(Rime ver0.9.28)]]></title>
+      <url>http://yoursite.com/2016/10/14/Rime%E5%9C%A8mac%E4%B8%8A%E7%9A%84%E9%85%8D%E7%BD%AE/</url>
+      <content type="html"><![CDATA[<h1 id="五笔拼音-Emoji-Rime-ver0-9-28"><a href="#五笔拼音-Emoji-Rime-ver0-9-28" class="headerlink" title="五笔拼音+Emoji(Rime ver0.9.28)"></a>五笔拼音+Emoji(Rime ver0.9.28)</h1><blockquote>
+<p>听闻Rime这个输出法扩展性能非常的高,还是一个开源的软件,所以决定试试.但是在实际使用过程中,发现一开始的配置过程和使用文档有非常大的出入啊,而且使用文档还是繁体版本,而且有些文档居然打不开.丢失了…我也是醉了。</p>
+</blockquote>
+<h3 id="安装配置"><a href="#安装配置" class="headerlink" title="安装配置"></a>安装配置</h3><p>一开始,下载安装,会让你注销一次，注销回来问你要不要保存原安装文件。(留着干嘛？)</p>
+<p>然后顶部栏手动切换到Rime输出法。</p>
+<p>试试control+` 这个组合键有没有用,假设有用,发现默认的输出法只有拼音,还有仓颉输入法，还有什么简体字，什么语句流,还有繁体。这完全不是我想要的好么。</p>
+<p>我只想要一个五笔拼音模糊输入法,顶部点开输入法,选择<code>用户设定...</code></p>
+<p>第一步：出现文件夹<code>Rime</code>，打开default.yaml （用文本编辑程序打开）找到<code>schema_list</code>字段，改为下面这样之后保存退出：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">schema_list:</div><div class="line">  - schema: wubi_pinyin</div><div class="line">  - schema: luna_pinyin</div><div class="line">  - schema: emoji</div></pre></td></tr></table></figure>
+<p>第二步：打开Finder,前往文件夹（⇧+⌘+G）,输出<code>/Library/Input Methods/Squirrel.app/Contents/SharedSupport/</code>  （为什么输出这个，见<a href="https://github.com/rime/home/wiki/RimeWithSchemata" target="_blank" rel="external">Rime的Wiki</a>）</p>
+<p>把<code>wubi_pinyin.schema.yaml</code> 这个文件复制到第一步打开的<code>Rime</code>文件夹里面。然后顶部点开输入法，点击<code>重新部署</code>。</p>
+<p>完事。</p>
+<h3 id="我为什么放弃使用搜狗五笔输出法"><a href="#我为什么放弃使用搜狗五笔输出法" class="headerlink" title="我为什么放弃使用搜狗五笔输出法"></a>我为什么放弃使用搜狗五笔输出法</h3><p>用搜狗五笔，中英文标点（，。,.）切换非常不方便，当我写代码的时候。一般是用英语，那么我就要用英文标点(,.) 。这样下来，在用搜狗五笔的时候就是全局都是英文标点了。</p>
+<p>而Rime，他用⇧切换中英文，在中文输入时它就是中文标点，在英文输入是它就是英文标点。</p>
+<p>这是其一。</p>
+<p>当点击、时他出现<code>、/／÷</code>这样四种选项，非常的方便。还有⇧+4，出现<code>￥$€£¥</code> 等等。。。可以说在符号使用上面，完爆我曾经使用过的其它输入法。</p>
+<p>这是其二。</p>
+<p>还可以扩展，可以自主选择想要的输入法。（emoji输入比ctrl+⌘+space快多了）</p>
+<p>这一个输入法，可以顶得上我之前使用的搜狗五笔+搜狗拼音。什么时候我想写繁体了，只要添加相应的文件，改一下相应的字段就可以了。</p>
+<p>这是其三。</p>
+<p>参考资料：<a href="https://github.com/rime/home/wiki/RimeWithSchemata" target="_blank" rel="external">Rime 輸入方案設計書</a></p>
+<p>​                   <a href="http://rime.im" target="_blank" rel="external">官网</a></p>
+]]></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[markdown学习笔记]]></title>
-      <url>http://yoursite.com/2016/09/20/markdown%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E7%9A%84%E5%89%AF%E6%9C%AC/</url>
+      <url>http://yoursite.com/2016/09/20/markdown%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
       <content type="html"><![CDATA[<p>想要设置 —&gt;YAML Front Matters<br>三个减号 然后enter</p>
 <p><a href="http://commonmark.cn/help/tutorial/index.html" target="_blank" rel="external">通用markdow练习!!!!赞!赞!赞!</a> </p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">这个索引通过[toc]来实现</div></pre></td></tr></table></figure>
@@ -194,7 +222,7 @@
 <h3 id="然而-最简单的超链接"><a href="#然而-最简单的超链接" class="headerlink" title="然而,最简单的超链接"></a>然而,最简单的超链接</h3><p><code>&lt;http://example.com/&gt;</code>  右右一个&lt; &gt; 就搞定了   </p>
 <p><a href="http://example.com/" target="_blank" rel="external">http://example.com/</a></p>
 <p><baidu.com>  这样不行。。。(要加上http://)   <abd>   <a href="http://baidu.com" target="_blank" rel="external">http://baidu.com</a></abd></baidu.com></p>
-<p><a href="&#109;&#x61;&#x69;&#x6c;&#116;&#111;&#58;&#122;&#x62;&#x79;&#50;&#48;&#x30;&#x38;&#x6c;&#x6b;&#x77;&#64;&#x31;&#54;&#x33;&#x2e;&#99;&#111;&#x6d;">&#122;&#x62;&#x79;&#50;&#48;&#x30;&#x38;&#x6c;&#x6b;&#x77;&#64;&#x31;&#54;&#x33;&#x2e;&#99;&#111;&#x6d;</a></p>
+<p><a href="&#109;&#97;&#105;&#x6c;&#116;&#111;&#58;&#x7a;&#98;&#x79;&#x32;&#48;&#x30;&#56;&#108;&#107;&#119;&#64;&#x31;&#54;&#x33;&#x2e;&#99;&#111;&#x6d;">&#x7a;&#98;&#x79;&#x32;&#48;&#x30;&#56;&#108;&#107;&#119;&#64;&#x31;&#54;&#x33;&#x2e;&#99;&#111;&#x6d;</a></p>
 <h2 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h2><p>下面来插入图片 格式:</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">![](https://ss0.bdstatic.com/5aV1bjqh_Q23odCf/static/superman/img/logo/bd_logo1_31bdc765.png)</div></pre></td></tr></table></figure>
 <p><img src="https://ss0.bdstatic.com/5aV1bjqh_Q23odCf/static/superman/img/logo/bd_logo1_31bdc765.png" alt=""></p>
