@@ -479,18 +479,18 @@
         
           
             <h1 id="五笔拼音-Emoji-Rime-ver0-9-28"><a href="#五笔拼音-Emoji-Rime-ver0-9-28" class="headerlink" title="五笔拼音+Emoji(Rime ver0.9.28)"></a>五笔拼音+Emoji(Rime ver0.9.28)</h1><blockquote>
-<p>听闻Rime这个输出法扩展性能非常的高,还是一个开源的软件,所以决定试试.但是在实际使用过程中,发现一开始的配置过程和使用文档有非常大的出入啊,而且使用文档还是繁体版本,而且有些文档居然打不开.丢失了…我也是醉了。</p>
+<p>听闻Rime这个输入法扩展性能非常的高,还是一个开源的软件,所以决定试试.但是在实际使用过程中,发现一开始的配置过程和使用文档有非常大的出入啊,而且使用文档还是繁体版本,而且有些文档居然打不开.丢失了…我也是醉了。</p>
 </blockquote>
 <h3 id="安装配置"><a href="#安装配置" class="headerlink" title="安装配置"></a>安装配置</h3><p>一开始,下载安装,会让你注销一次，注销回来问你要不要保存原安装文件。(留着干嘛？)</p>
-<p>然后顶部栏手动切换到Rime输出法。</p>
-<p>试试control+` 这个组合键有没有用,假设有用,发现默认的输出法只有拼音,还有仓颉输入法，还有什么简体字，什么语句流,还有繁体。这完全不是我想要的好么。</p>
+<p>然后顶部栏手动切换到Rime输入法。</p>
+<p>试试control+` 这个组合键有没有用,假设有用,发现默认的输入法只有拼音,还有仓颉输入法，还有什么简体字，什么语句流,还有繁体。这完全不是我想要的好么。</p>
 <p>我只想要一个五笔拼音模糊输入法,顶部点开输入法,选择<code>用户设定...</code></p>
 <p>第一步：出现文件夹<code>Rime</code>，打开default.yaml （用文本编辑程序打开）找到<code>schema_list</code>字段，改为下面这样之后保存退出：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">schema_list:</div><div class="line">  - schema: wubi_pinyin</div><div class="line">  - schema: luna_pinyin</div><div class="line">  - schema: emoji</div></pre></td></tr></table></figure>
-<p>第二步：打开Finder,前往文件夹（⇧+⌘+G）,输出<code>/Library/Input Methods/Squirrel.app/Contents/SharedSupport/</code>  （为什么输出这个，见<a href="https://github.com/rime/home/wiki/RimeWithSchemata" target="_blank" rel="external">Rime的Wiki</a>）</p>
+<p>第二步：打开Finder,前往文件夹（⇧+⌘+G）,输入<code>/Library/Input Methods/Squirrel.app/Contents/SharedSupport/</code>  （为什么输入这个，见<a href="https://github.com/rime/home/wiki/RimeWithSchemata" target="_blank" rel="external">Rime的Wiki</a>）</p>
 <p>把<code>wubi_pinyin.schema.yaml</code> 这个文件复制到第一步打开的<code>Rime</code>文件夹里面。然后顶部点开输入法，点击<code>重新部署</code>。</p>
 <p>完事。</p>
-<h3 id="我为什么放弃使用搜狗五笔输出法"><a href="#我为什么放弃使用搜狗五笔输出法" class="headerlink" title="我为什么放弃使用搜狗五笔输出法"></a>我为什么放弃使用搜狗五笔输出法</h3><p>用搜狗五笔，中英文标点（，。,.）切换非常不方便，当我写代码的时候。一般是用英语，那么我就要用英文标点(,.) 。这样下来，在用搜狗五笔的时候就是全局都是英文标点了。</p>
+<h3 id="我为什么放弃使用搜狗五笔输入法"><a href="#我为什么放弃使用搜狗五笔输入法" class="headerlink" title="我为什么放弃使用搜狗五笔输入法"></a>我为什么放弃使用搜狗五笔输入法</h3><p>用搜狗五笔，中英文标点（，。,.）切换非常不方便，当我写代码的时候。一般是用英语，那么我就要用英文标点(,.) 。这样下来，在用搜狗五笔的时候就是全局都是英文标点了。</p>
 <p>而Rime，他用⇧切换中英文，在中文输入时它就是中文标点，在英文输入是它就是英文标点。</p>
 <p>这是其一。</p>
 <p>当点击、时他出现<code>、/／÷</code>这样四种选项，非常的方便。还有⇧+4，出现<code>￥$€£¥</code> 等等。。。可以说在符号使用上面，完爆我曾经使用过的其它输入法。</p>
